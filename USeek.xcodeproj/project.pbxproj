@@ -7,13 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		837C6FF71F52EE4A00080599 /* USeek.h in Headers */ = {isa = PBXBuildFile; fileRef = 837C6FF51F52EE4A00080599 /* USeek.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		837C700A1F52EE8E00080599 /* USeek.h in Headers */ = {isa = PBXBuildFile; fileRef = 837C6FFD1F52EE8E00080599 /* USeek.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		837C700B1F52EE8E00080599 /* USeek.m in Sources */ = {isa = PBXBuildFile; fileRef = 837C6FFE1F52EE8E00080599 /* USeek.m */; };
+		837C700C1F52EE8E00080599 /* USeekUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 837C6FFF1F52EE8E00080599 /* USeekUtils.h */; };
+		837C700D1F52EE8E00080599 /* USeekUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 837C70001F52EE8E00080599 /* USeekUtils.m */; };
+		837C700E1F52EE8E00080599 /* USeekWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = 837C70011F52EE8E00080599 /* USeekWebView.h */; };
+		837C700F1F52EE8E00080599 /* USeekWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 837C70021F52EE8E00080599 /* USeekWebView.m */; };
+		837C70101F52EE8E00080599 /* USeekPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 837C70031F52EE8E00080599 /* USeekPlayerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		837C70111F52EE8E00080599 /* USeekPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 837C70041F52EE8E00080599 /* USeekPlayerView.m */; };
+		837C70121F52EE8E00080599 /* USeekPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 837C70051F52EE8E00080599 /* USeekPlayerView.xib */; };
+		837C70131F52EE8E00080599 /* USeekPlayerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 837C70061F52EE8E00080599 /* USeekPlayerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		837C70141F52EE8E00080599 /* USeekPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 837C70071F52EE8E00080599 /* USeekPlayerViewController.m */; };
+		837C70151F52EE8E00080599 /* USeekPlayerViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 837C70081F52EE8E00080599 /* USeekPlayerViewController~ipad.xib */; };
+		837C70161F52EE8E00080599 /* USeekPlayerViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 837C70091F52EE8E00080599 /* USeekPlayerViewController~iphone.xib */; };
+		837C70181F52EE9700080599 /* USeekAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 837C70171F52EE9700080599 /* USeekAssets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		837C6FF21F52EE4A00080599 /* USeek.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = USeek.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		837C6FF51F52EE4A00080599 /* USeek.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = USeek.h; sourceTree = "<group>"; };
 		837C6FF61F52EE4A00080599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		837C6FFD1F52EE8E00080599 /* USeek.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USeek.h; sourceTree = "<group>"; };
+		837C6FFE1F52EE8E00080599 /* USeek.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USeek.m; sourceTree = "<group>"; };
+		837C6FFF1F52EE8E00080599 /* USeekUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USeekUtils.h; sourceTree = "<group>"; };
+		837C70001F52EE8E00080599 /* USeekUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USeekUtils.m; sourceTree = "<group>"; };
+		837C70011F52EE8E00080599 /* USeekWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USeekWebView.h; sourceTree = "<group>"; };
+		837C70021F52EE8E00080599 /* USeekWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USeekWebView.m; sourceTree = "<group>"; };
+		837C70031F52EE8E00080599 /* USeekPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USeekPlayerView.h; sourceTree = "<group>"; };
+		837C70041F52EE8E00080599 /* USeekPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USeekPlayerView.m; sourceTree = "<group>"; };
+		837C70051F52EE8E00080599 /* USeekPlayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = USeekPlayerView.xib; sourceTree = "<group>"; };
+		837C70061F52EE8E00080599 /* USeekPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USeekPlayerViewController.h; sourceTree = "<group>"; };
+		837C70071F52EE8E00080599 /* USeekPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USeekPlayerViewController.m; sourceTree = "<group>"; };
+		837C70081F52EE8E00080599 /* USeekPlayerViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "USeekPlayerViewController~ipad.xib"; sourceTree = "<group>"; };
+		837C70091F52EE8E00080599 /* USeekPlayerViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "USeekPlayerViewController~iphone.xib"; sourceTree = "<group>"; };
+		837C70171F52EE9700080599 /* USeekAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = USeekAssets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +72,20 @@
 		837C6FF41F52EE4A00080599 /* USeek */ = {
 			isa = PBXGroup;
 			children = (
-				837C6FF51F52EE4A00080599 /* USeek.h */,
+				837C6FFD1F52EE8E00080599 /* USeek.h */,
+				837C6FFE1F52EE8E00080599 /* USeek.m */,
+				837C6FFF1F52EE8E00080599 /* USeekUtils.h */,
+				837C70001F52EE8E00080599 /* USeekUtils.m */,
+				837C70011F52EE8E00080599 /* USeekWebView.h */,
+				837C70021F52EE8E00080599 /* USeekWebView.m */,
+				837C70031F52EE8E00080599 /* USeekPlayerView.h */,
+				837C70041F52EE8E00080599 /* USeekPlayerView.m */,
+				837C70051F52EE8E00080599 /* USeekPlayerView.xib */,
+				837C70061F52EE8E00080599 /* USeekPlayerViewController.h */,
+				837C70071F52EE8E00080599 /* USeekPlayerViewController.m */,
+				837C70081F52EE8E00080599 /* USeekPlayerViewController~ipad.xib */,
+				837C70091F52EE8E00080599 /* USeekPlayerViewController~iphone.xib */,
+				837C70171F52EE9700080599 /* USeekAssets.xcassets */,
 				837C6FF61F52EE4A00080599 /* Info.plist */,
 			);
 			path = USeek;
@@ -59,7 +98,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				837C6FF71F52EE4A00080599 /* USeek.h in Headers */,
+				837C70101F52EE8E00080599 /* USeekPlayerView.h in Headers */,
+				837C70131F52EE8E00080599 /* USeekPlayerViewController.h in Headers */,
+				837C700A1F52EE8E00080599 /* USeek.h in Headers */,
+				837C700C1F52EE8E00080599 /* USeekUtils.h in Headers */,
+				837C700E1F52EE8E00080599 /* USeekWebView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +164,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				837C70181F52EE9700080599 /* USeekAssets.xcassets in Resources */,
+				837C70151F52EE8E00080599 /* USeekPlayerViewController~ipad.xib in Resources */,
+				837C70121F52EE8E00080599 /* USeekPlayerView.xib in Resources */,
+				837C70161F52EE8E00080599 /* USeekPlayerViewController~iphone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				837C700F1F52EE8E00080599 /* USeekWebView.m in Sources */,
+				837C70111F52EE8E00080599 /* USeekPlayerView.m in Sources */,
+				837C70141F52EE8E00080599 /* USeekPlayerViewController.m in Sources */,
+				837C700B1F52EE8E00080599 /* USeek.m in Sources */,
+				837C700D1F52EE8E00080599 /* USeekUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

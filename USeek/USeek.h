@@ -1,19 +1,21 @@
 //
 //  USeek.h
-//  USeek
+//  USeekDemo
 //
-//  Created by Chris Lin on 8/27/17.
+//  Created by Chris Lin on 7/19/17.
 //  Copyright © 2017 USeek. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-//! Project version number for USeek.
-FOUNDATION_EXPORT double USeekVersionNumber;
+@interface USeek : NSObject
 
-//! Project version string for USeek.
-FOUNDATION_EXPORT const unsigned char USeekVersionString[];
+@property (strong, nonatomic) NSString *publisherId;
 
-// In this header, you should import all the public headers of your framework using statements like #import <USeek/PublicHeader.h>
++ (instancetype) sharedInstance;
 
+#pragma mark - Request
 
+- (void) requestPointsWithGameId: (NSString *) gameId UserId: (NSString *) userId Success: (void (^) (int points)) success Failure: (void (^) (NSError *error)) failure;
+
+@end
