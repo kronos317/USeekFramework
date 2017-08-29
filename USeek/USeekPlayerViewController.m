@@ -25,7 +25,9 @@
 @implementation USeekPlayerViewController
 
 - (id) init {
-    self = [super initWithNibName:NSStringFromClass([self class]) bundle:nil];
+    NSString* const frameworkBundleID  = @"com.useek.USeekFramework";
+    NSBundle* bundle = [NSBundle bundleWithIdentifier:frameworkBundleID];
+    self = [super initWithNibName:NSStringFromClass([self class]) bundle:bundle];
     if (self) {
         [self initialize];
     }

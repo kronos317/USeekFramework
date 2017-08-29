@@ -37,7 +37,9 @@
 }
 
 - (void) initialize{
-    [[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:self options:nil];
+    NSString* const frameworkBundleID  = @"com.useek.USeekFramework";
+    NSBundle* bundle = [NSBundle bundleWithIdentifier:frameworkBundleID];
+    [bundle loadNibNamed:NSStringFromClass([self class]) owner:self options:nil];
     self.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
     self.view.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
     [self addSubview:self.view];
