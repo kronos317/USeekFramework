@@ -1,0 +1,6 @@
+framework module USeek {
+  umbrella header "USeek.h"
+
+  export *
+  module * { export * }
+}
