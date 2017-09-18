@@ -12,10 +12,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="USeekPlayerViewController">
             <connections>
-                <outlet property="buttonClose" destination="pdk-9W-Mep" id="A2p-9m-DtD"/>
-                <outlet property="labelLoadingTitle" destination="2uF-9k-kLW" id="umX-yF-Zie"/>
+                <outlet property="closeButton" destination="pdk-9W-Mep" id="EkK-Jk-XCj"/>
+                <outlet property="loadingMaskView" destination="HI9-AJ-Ymd" id="nwd-2G-bfd"/>
+                <outlet property="loadingTitleLabel" destination="2uF-9k-kLW" id="3bN-d9-orI"/>
                 <outlet property="view" destination="iN0-l3-epB" id="iHe-eM-cZ2"/>
-                <outlet property="viewLoadingMask" destination="HI9-AJ-Ymd" id="0VA-eL-xNa"/>
                 <outlet property="webView" destination="JxG-7x-mdD" id="EZX-0J-3pv"/>
             </connections>
         </placeholder>
@@ -57,7 +57,7 @@
                     </constraints>
                     <state key="normal" image="useek-button-close"/>
                     <connections>
-                        <action selector="onButtonClose:" destination="-1" eventType="touchUpInside" id="1jg-MC-oB8"/>
+                        <action selector="onCloseButtonClick:" destination="-1" eventType="touchUpInside" id="HXV-lj-EAL"/>
                     </connections>
                 </button>
             </subviews>

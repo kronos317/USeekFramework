@@ -11,9 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="USeekPlayerView">
             <connections>
-                <outlet property="labelLoadingTitle" destination="a18-WO-GeI" id="lbR-9b-9xv"/>
+                <outlet property="loadingMaskView" destination="vH8-5B-i20" id="7TS-G8-Fbh"/>
+                <outlet property="loadingTitleLabel" destination="a18-WO-GeI" id="por-N4-doK"/>
                 <outlet property="view" destination="iN0-l3-epB" id="t3M-ju-XGg"/>
-                <outlet property="viewLoadingMask" destination="vH8-5B-i20" id="eac-u1-Am9"/>
                 <outlet property="webView" destination="71P-AB-MG0" id="T9a-k9-gaS"/>
             </connections>
         </placeholder>
@@ -25,6 +25,9 @@
                 <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="71P-AB-MG0" customClass="USeekWebView">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="bI9-oe-2nU"/>
+                    </connections>
                 </webView>
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vH8-5B-i20" userLabel="View - Loading Mask">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
