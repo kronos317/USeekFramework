@@ -11,7 +11,7 @@ BCSymbolMap Version: 2.0
 -[USeekWebView .cxx_destruct]
 _OBJC_IVAR_$_USeekWebView._gameId
 _OBJC_IVAR_$_USeekWebView._userId
-Apple LLVM version 8.1.0 (clang-802.0.42)
+Apple LLVM version 9.0.0 (clang-900.0.38)
 /Volumes/Work/projects/uSeek/uSeek-iOS/Framework/USeek/USeek/USeekWebView.m
 /Volumes/Work/projects/uSeek/uSeek-iOS/Framework/USeek
 /Volumes/Work/projects/uSeek/uSeek-iOS/Framework/USeek/USeek/USeekWebView.h
@@ -45,14 +45,14 @@ ___destroy_helper_block_.74
 -[USeekPlayerView webViewDidStartLoad:]
 -[USeekPlayerView webViewDidFinishLoad:]
 -[USeekPlayerView webView:didFailLoadWithError:]
--[USeekPlayerView labelLoadingTitle]
--[USeekPlayerView setLabelLoadingTitle:]
+-[USeekPlayerView loadingTitleLabel]
+-[USeekPlayerView setLoadingTitleLabel:]
 -[USeekPlayerView delegate]
 -[USeekPlayerView setDelegate:]
 -[USeekPlayerView view]
 -[USeekPlayerView setView:]
--[USeekPlayerView viewLoadingMask]
--[USeekPlayerView setViewLoadingMask:]
+-[USeekPlayerView loadingMaskView]
+-[USeekPlayerView setLoadingMaskView:]
 -[USeekPlayerView webView]
 -[USeekPlayerView setWebView:]
 -[USeekPlayerView enumStatus]
@@ -66,10 +66,10 @@ ___block_descriptor_tmp.65
 ___block_descriptor_tmp.68
 ___block_descriptor_tmp.72
 ___block_descriptor_tmp.75
-_OBJC_IVAR_$_USeekPlayerView._labelLoadingTitle
+_OBJC_IVAR_$_USeekPlayerView._loadingTitleLabel
 _OBJC_IVAR_$_USeekPlayerView._delegate
 _OBJC_IVAR_$_USeekPlayerView._view
-_OBJC_IVAR_$_USeekPlayerView._viewLoadingMask
+_OBJC_IVAR_$_USeekPlayerView._loadingMaskView
 _OBJC_IVAR_$_USeekPlayerView._webView
 _OBJC_IVAR_$_USeekPlayerView._enumStatus
 _OBJC_IVAR_$_USeekPlayerView._isLoadingMaskHidden
@@ -98,33 +98,35 @@ __43-[USeekPlayerView animateLoadingMaskToShow]_block_invoke
 -[USeekPlayerViewController animateLoadingMaskToShow]
 ___53-[USeekPlayerViewController animateLoadingMaskToShow]_block_invoke
 ___53-[USeekPlayerViewController animateLoadingMaskToShow]_block_invoke_2
-___53-[USeekPlayerViewController animateLoadingMaskToShow]_block_invoke.52
-___copy_helper_block_.53
-___destroy_helper_block_.54
-___copy_helper_block_.59
-___destroy_helper_block_.60
+___53-[USeekPlayerViewController animateLoadingMaskToShow]_block_invoke.54
+___copy_helper_block_.55
+___destroy_helper_block_.56
+___copy_helper_block_.61
+___destroy_helper_block_.62
 -[USeekPlayerViewController animateLoadingMaskToHide]
 ___53-[USeekPlayerViewController animateLoadingMaskToHide]_block_invoke
 ___53-[USeekPlayerViewController animateLoadingMaskToHide]_block_invoke_2
-___copy_helper_block_.62
-___destroy_helper_block_.63
-___53-[USeekPlayerViewController animateLoadingMaskToHide]_block_invoke.65
-___copy_helper_block_.69
-___destroy_helper_block_.70
--[USeekPlayerViewController onButtonClose:]
+___copy_helper_block_.64
+___destroy_helper_block_.65
+___53-[USeekPlayerViewController animateLoadingMaskToHide]_block_invoke.67
+___copy_helper_block_.68
+___destroy_helper_block_.69
+___copy_helper_block_.71
+___destroy_helper_block_.72
+-[USeekPlayerViewController onCloseButtonClick:]
 -[USeekPlayerViewController webViewDidStartLoad:]
 -[USeekPlayerViewController webViewDidFinishLoad:]
 -[USeekPlayerViewController webView:didFailLoadWithError:]
--[USeekPlayerViewController labelLoadingTitle]
--[USeekPlayerViewController setLabelLoadingTitle:]
+-[USeekPlayerViewController loadingTitleLabel]
+-[USeekPlayerViewController setLoadingTitleLabel:]
 -[USeekPlayerViewController delegate]
 -[USeekPlayerViewController setDelegate:]
--[USeekPlayerViewController viewLoadingMask]
--[USeekPlayerViewController setViewLoadingMask:]
+-[USeekPlayerViewController loadingMaskView]
+-[USeekPlayerViewController setLoadingMaskView:]
 -[USeekPlayerViewController webView]
 -[USeekPlayerViewController setWebView:]
--[USeekPlayerViewController buttonClose]
--[USeekPlayerViewController setButtonClose:]
+-[USeekPlayerViewController closeButton]
+-[USeekPlayerViewController setCloseButton:]
 -[USeekPlayerViewController enumStatus]
 -[USeekPlayerViewController setEnumStatus:]
 -[USeekPlayerViewController isCloseButtonHidden]
@@ -132,49 +134,53 @@ ___destroy_helper_block_.70
 -[USeekPlayerViewController isLoadingMaskHidden]
 -[USeekPlayerViewController setIsLoadingMaskHidden:]
 -[USeekPlayerViewController .cxx_destruct]
-___block_descriptor_tmp.56
-___block_descriptor_tmp.61
-___block_descriptor_tmp.64
-___block_descriptor_tmp.71
-_OBJC_IVAR_$_USeekPlayerViewController._labelLoadingTitle
+___block_descriptor_tmp.58
+___block_descriptor_tmp.63
+___block_descriptor_tmp.66
+___block_descriptor_tmp.70
+___block_descriptor_tmp.73
+_OBJC_IVAR_$_USeekPlayerViewController._loadingTitleLabel
 _OBJC_IVAR_$_USeekPlayerViewController._delegate
-_OBJC_IVAR_$_USeekPlayerViewController._viewLoadingMask
+_OBJC_IVAR_$_USeekPlayerViewController._loadingMaskView
 _OBJC_IVAR_$_USeekPlayerViewController._webView
-_OBJC_IVAR_$_USeekPlayerViewController._buttonClose
+_OBJC_IVAR_$_USeekPlayerViewController._closeButton
 _OBJC_IVAR_$_USeekPlayerViewController._enumStatus
 _OBJC_IVAR_$_USeekPlayerViewController._isCloseButtonHidden
 _OBJC_IVAR_$_USeekPlayerViewController._isLoadingMaskHidden
 /Volumes/Work/projects/uSeek/uSeek-iOS/Framework/USeek/USeek/USeekPlayerViewController.m
 /Volumes/Work/projects/uSeek/uSeek-iOS/Framework/USeek/USeek/USeekPlayerViewController.h
-__53-[USeekPlayerViewController animateLoadingMaskToHide]_block_invoke.65
+__53-[USeekPlayerViewController animateLoadingMaskToHide]_block_invoke.67
 __53-[USeekPlayerViewController animateLoadingMaskToHide]_block_invoke_2
 __53-[USeekPlayerViewController animateLoadingMaskToHide]_block_invoke
-__53-[USeekPlayerViewController animateLoadingMaskToShow]_block_invoke.52
+__53-[USeekPlayerViewController animateLoadingMaskToShow]_block_invoke.54
 __53-[USeekPlayerViewController animateLoadingMaskToShow]_block_invoke_2
 __53-[USeekPlayerViewController animateLoadingMaskToShow]_block_invoke
-+[USeekManager sharedInstance]
-___30+[USeekManager sharedInstance]_block_invoke
++[USeekManager sharedManager]
+___29+[USeekManager sharedManager]_block_invoke
 -[USeekManager init]
 -[USeekManager initializeManager]
 -[USeekManager requestPointsWithGameId:UserId:Success:Failure:]
 ___63-[USeekManager requestPointsWithGameId:UserId:Success:Failure:]_block_invoke
-___copy_helper_block_.52
-___destroy_helper_block_.53
-___63-[USeekManager requestPointsWithGameId:UserId:Success:Failure:]_block_invoke.56
+___copy_helper_block_.45
+___destroy_helper_block_.46
+___63-[USeekManager requestPointsWithGameId:UserId:Success:Failure:]_block_invoke.49
+___copy_helper_block_.50
+___destroy_helper_block_.51
 -[USeekManager publisherId]
 -[USeekManager setPublisherId:]
 -[USeekManager .cxx_destruct]
-_sharedInstance.once
-_sharedInstance.sharedInstance
-___block_descriptor_tmp.55
+_sharedManager.once
+_sharedManager.sharedManager
+___block_descriptor_tmp.48
+___block_descriptor_tmp.53
 _OBJC_IVAR_$_USeekManager._publisherId
 /Volumes/Work/projects/uSeek/uSeek-iOS/Framework/USeek/USeek/USeekManager.m
 /Volumes/Work/projects/uSeek/uSeek-iOS/Framework/USeek/USeek/USeekManager.h
-__63-[USeekManager requestPointsWithGameId:UserId:Success:Failure:]_block_invoke.56
+__63-[USeekManager requestPointsWithGameId:UserId:Success:Failure:]_block_invoke.49
 __63-[USeekManager requestPointsWithGameId:UserId:Success:Failure:]_block_invoke
-__30+[USeekManager sharedInstance]_block_invoke
+__29+[USeekManager sharedManager]_block_invoke
 _dispatch_once
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/usr/include/dispatch/once.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/usr/include/dispatch/once.h
 -[USeekPlaybackResultDataModel init]
 -[USeekPlaybackResultDataModel initWithDictionary:]
 -[USeekPlaybackResultDataModel description]
@@ -186,10 +192,14 @@ _dispatch_once
 -[USeekPlaybackResultDataModel setGameId:]
 -[USeekPlaybackResultDataModel userId]
 -[USeekPlaybackResultDataModel setUserId:]
+-[USeekPlaybackResultDataModel internalUserId]
+-[USeekPlaybackResultDataModel setInternalUserId:]
 -[USeekPlaybackResultDataModel finished]
 -[USeekPlaybackResultDataModel setFinished:]
--[USeekPlaybackResultDataModel points]
--[USeekPlaybackResultDataModel setPoints:]
+-[USeekPlaybackResultDataModel lastPlayPoints]
+-[USeekPlaybackResultDataModel setLastPlayPoints:]
+-[USeekPlaybackResultDataModel totalPoints]
+-[USeekPlaybackResultDataModel setTotalPoints:]
 -[USeekPlaybackResultDataModel .cxx_destruct]
 +[USeekUtils validateString:]
 +[USeekUtils validateUrl:]
@@ -204,16 +214,18 @@ _dispatch_once
 ___48+[USeekUtils requestGET:Params:Success:Failure:]_block_invoke
 +[USeekUtils requestPOST:Params:Success:Failure:]
 ___49+[USeekUtils requestPOST:Params:Success:Failure:]_block_invoke
-___copy_helper_block_.175
-___destroy_helper_block_.176
+___copy_helper_block_.192
+___destroy_helper_block_.193
 _OBJC_IVAR_$_USeekPlaybackResultDataModel._publisherId
 _OBJC_IVAR_$_USeekPlaybackResultDataModel._gameId
 _OBJC_IVAR_$_USeekPlaybackResultDataModel._userId
+_OBJC_IVAR_$_USeekPlaybackResultDataModel._internalUserId
 _OBJC_IVAR_$_USeekPlaybackResultDataModel._finished
-_OBJC_IVAR_$_USeekPlaybackResultDataModel._points
-___block_descriptor_tmp.177
+_OBJC_IVAR_$_USeekPlaybackResultDataModel._lastPlayPoints
+_OBJC_IVAR_$_USeekPlaybackResultDataModel._totalPoints
+___block_descriptor_tmp.194
 /Volumes/Work/projects/uSeek/uSeek-iOS/Framework/USeek/USeek/USeekUtils.m
 __49+[USeekUtils requestPOST:Params:Success:Failure:]_block_invoke
 __48+[USeekUtils requestGET:Params:Success:Failure:]_block_invoke
 /Volumes/Work/projects/uSeek/uSeek-iOS/Framework/USeek/USeek/USeekUtils.h
-/Users/Chris/Library/Developer/Xcode/DerivedData/USeek-ggcirsjsimqcuqfklrdfltmwbuuz/Build/Intermediates/USeek.build/Release-iphoneos/USeek.build/DerivedSources/USeek_vers.c
+/Users/Chris/Library/Developer/Xcode/DerivedData/USeek-ggcirsjsimqcuqfklrdfltmwbuuz/Build/Intermediates.noindex/USeek.build/Release-iphoneos/USeek.build/DerivedSources/USeek_vers.c
